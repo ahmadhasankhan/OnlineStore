@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
- <title>Pragprog Books Online Store</title>
- <%= stylesheet_link_tag "application", media: "all",
- "data-turbolinks-track" => true %>
-<%= csrf_meta_tags %>
-<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <title>Online Store</title>
+    <%= stylesheet_link_tag "application", media: "all",
+                            "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 </head>
- <div id="banner">
- <%= image_tag("logo.png") %>
- <%= @page_title || "Pragmatic Bookshelf" %>
- </div>
+<div id="banner">
+    <%= image_tag("logo.jpg") %>
+    <%= @page_title || "Online Store" %>
+</div>
 <div id="columns">
 
- <div id="side">
- <ul>
- <li><a href="/">Home</a></li>
- <li><a href="#">Questions</a></li>
-<li><a href="#">News</a></li>
- <li><a href="#">Contact</a></li>
- </ul>
- </div>
- <div id="main">
- <%= yield %>
- </div>
- </div>
+    <div id="side">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#">Questions</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div id="main">
+        <%= yield %>
+    </div>
+</div>
 </body>
 </html>
