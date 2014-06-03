@@ -27,6 +27,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt', '~> 3.1.7'
 gem "carrierwave"
 gem 'rmagick', require: false
+gem 'will_paginate'
+
 # Use unicorn as the app server
 # gem 'unicorn'
 gem 'rails_12factor', group: :production

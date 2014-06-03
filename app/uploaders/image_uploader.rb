@@ -31,7 +31,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   # end
 
    def default_url
-     "/images/defaults/notAvailable.jpg"
+     "/images/defaults/notAvailable.png"
    end
 
   # Process files as they are uploaded:
